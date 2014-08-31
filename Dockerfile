@@ -28,4 +28,5 @@ RUN chown -R root.root /src
 EXPOSE 22
 
 # Start ssh services.
-CMD ["/bin/bash", "/src/startup.sh"]
+CMD ["/src/startup.sh"]
+
