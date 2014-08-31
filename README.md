@@ -13,7 +13,7 @@ docker run -d akyshr/ubuntu-sshd
 ````
 ###Change Language 
 
- docker run -d -e "LANG=ja_JP.UTF-8" -e "TZ=JST-9" akyshr/ubuntu-mate-tigervnc
+ docker run -d -e "LANG=ja_JP.UTF-8" -e "TZ=JST-9" akyshr/ubuntu-sshd
 
 
 ###Configuration Parameters
