@@ -17,6 +17,7 @@ docker run -d akyshr/ubuntu-sshd
 
 ###Configuration Parameters
 Below is the list of parameters that can be set using environment variables.
+
 * USER : user account name. Defaults to 'ubuntu'.
 * PASSWORD : user password. Defaults to 'ubuntu'.
 * LANG  : Language. Defaults to 'en_US.UTF-8'.

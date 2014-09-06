@@ -20,13 +20,14 @@ RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || :
 RUN localedef -v -c -i ja_JP -f UTF-8 ja_JP.UTF-8 || :
 
 # Copy the files into the container
-ADD . /src
-RUN rm /src/*~ ; true
-RUN chown -R root.root /src
+ADD start_sshd.sh /src/start_sshd.sh
+ADD README.md /src/README.md
+
+#RUN chown -R root.root /src
 
 
 EXPOSE 22
 
 # Start ssh services.
-CMD ["/src/startup.sh"]
+CMD ["/src/start_sshd.sh"]
 
